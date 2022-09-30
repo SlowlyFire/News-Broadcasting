@@ -41,11 +41,21 @@ The editing process will be simulated by the Co-Editors by blocking for one tent
 **The Screen-manager displays the strings it receives via the Co-Editors queue to the screen (std-output).** After printing all messages to the screen and receiving three "DONE" messages, the Screen manager displays a ‘DONE’ statement.  
 
 
+**Bounded and Unbounded Buffers:**   
+We should notice that the Producer queues in this project and the Co-Editors shared queue are a **bounded buffer** that supports the following operations:  
+· Bounded_Buffer (int size) – (constructor) create a new bounded buffer with size places to store objects.  
+· void insert (char * s) – insert a new object into the bounded buffer.   
+· char * remove ( ) - Remove the first object from the bounded buffer and return it to the user.  
 
-  
+**The dispatcher queues are unbounded buffers**.  
 
 
-  
+**Example of the configuration file:**  
+![image](https://user-images.githubusercontent.com/83518959/193200846-41e4ea92-c7fc-4aa2-bb42-3c148e783be4.png)  
+That means that for producer 1, we have 30 news, and its private queue size is 5.  
+As well, for producer 2 we have 25 news, and its private queue size is 3, etc.  
+17 is the Co-Editor queue size (which is shared with the screen).  
 
-
-
+**How to run?**  
+g++ -o ex3.out ex3.cpp  
+ex3.out config.txt  
