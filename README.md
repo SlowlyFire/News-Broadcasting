@@ -62,5 +62,6 @@ As well, for producer 2 we have 25 news, and its private queue size is 3, etc.
 - **How to compile and run?**  
 g++ -pthread -std=c++11 ex3.cpp -o ex3.out  
 ./ex3.out config.txt  
+https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/a38477d2-d3cd-4e97-8c40-5f9c8a42de18.gif?ClientID=vimeo-core-prod&Date=1664538231&Signature=73ccd30af3514941b88d8a993c676cc3c1d4e82c
 
 https://app.usebubbles.com/9DJpFzSgTH6viGqSjfyMHD/kjb-s-video-recording
