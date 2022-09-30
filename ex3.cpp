@@ -204,7 +204,6 @@ void* coEditNews(void* args) {
             } else {
                 screenBQ->enqueue(item);
             }
-            sleep(0.1);
         }
         pthread_exit(NULL);
         return 0;
@@ -219,7 +218,6 @@ void* coEditSport(void* args) {
             } else {
                 screenBQ->enqueue(item);
             }
-            sleep(0.1);
         }
         pthread_exit(NULL);
         return 0;
@@ -234,7 +232,6 @@ void* coEditWeather(void* args) {
             } else {
                 screenBQ->enqueue(item);
             }
-            sleep(0.1);
         }
         pthread_exit(NULL);
         return 0;
@@ -253,7 +250,7 @@ void* screenManager(void *arg) {
         } else {
             cout  << item << endl;
         }
-        sleep(0.1);
+        sleep(1);
     }
     pthread_exit(NULL);
     return 0;
