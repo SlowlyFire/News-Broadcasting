@@ -62,3 +62,5 @@ As well, for producer 2 we have 25 news, and its private queue size is 3, etc.
 - **How to compile and run?**  
 g++ -pthread -std=c++11 ex3.cpp -o ex3.out  
 ./ex3.out config.txt  
+
+https://app.usebubbles.com/9DJpFzSgTH6viGqSjfyMHD/kjb-s-video-recording
