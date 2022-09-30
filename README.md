@@ -48,7 +48,7 @@ We should notice that the Producer queues in this project and the Co-Editors sha
 · void insert (char * s) – insert a new object into the bounded buffer.   
 · char * remove ( ) - Remove the first object from the bounded buffer and return it to the user.  
 
-**The dispatcher queues are unbounded buffers**.  
+  The dispatcher queues are unbounded buffers.  
 
   
   
