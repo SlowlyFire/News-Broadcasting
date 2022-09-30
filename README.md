@@ -5,7 +5,7 @@ Different types of stories are produced and the system sorts them and displays t
 In this project, the ‘new stories’ are simulated by simple strings which should be displayed to the screen in the order they arrive.**  
 
 ## The System Design:    
-![image](https://user-images.githubusercontent.com/83518959/193197203-ef6eb02a-164e-446e-9cb8-13ed389d1783.png)  
+<img src="https://user-images.githubusercontent.com/83518959/193197203-ef6eb02a-164e-446e-9cb8-13ed389d1783.png" width="600" height="450" />  
 
 Three producers communicate with the dispatcher via their Producer queues. The Dispatcher communicates with the Co-Editors via three queues corresponding to the three types of messages. The Co- Editors communicate with the Screen-Manager via a single shared queue, and the Screen manager displays the systems output.  
 
