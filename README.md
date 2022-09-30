@@ -59,6 +59,6 @@ As well, for producer 2 we have 25 news, and its private queue size is 3, etc.
 17 is the Co-Editor queue size (which is shared with the screen).  
   
   
-- **How to run?**  
-g++ -o ex3.out ex3.cpp  
-ex3.out config.txt  
+- **How to compile and run?**  
+g++ -pthread -std=c++11 ex3.cpp -o ex3.out  
+./ex3.out config.txt  
